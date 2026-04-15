@@ -15,30 +15,39 @@ import ShieldCheck from "@lucide/astro/icons/shield-check";
 import Star from "@lucide/astro/icons/star";
 import Check from "@lucide/astro/icons/check";
 ---
+
 <BaseLayout
   title="Karlstad Städpartner | Städning med omtanke i Karlstad"
   description="Karlstad Städpartner erbjuder noggrann och pålitlig städning för hem, företag och kontor i Karlstad."
 >
-  <section class="bg-gradient-to-b from-slate-50 to-white hero">
-    <div class="mx-auto max-w-[1200px] px-4 py-12 sm:px-6 lg:px-8 lg:py-20">
-      <div class="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-        <div class="flex flex-col rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.06)] lg:p-10">
-          <div class="mb-4 inline-flex w-fit rounded-full bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-700">
+  <section class="hero bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto max-w-[1200px] px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+      <div class="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-stretch">
+        <div
+          class="flex flex-col rounded-3xl border border-slate-200 bg-white/95 p-8 shadow-[0_10px_30px_rgba(15,23,42,0.06)] lg:p-10"
+        >
+          <div
+            class="mb-4 inline-flex w-fit rounded-full bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-700"
+          >
             Lokal städfirma i Karlstad
           </div>
 
-          <h1 class="max-w-3xl text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl">
+          <h1
+            class="max-w-3xl text-3xl font-bold tracking-tight text-[#1D2B36] sm:text-4xl lg:text-[3.3rem] lg:leading-[1.05]"
+          >
             Städning i Karlstad – enkelt, tryggt och noggrant utfört.
           </h1>
 
-          <p class="mt-5 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
+          <p
+            class="mt-5 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg"
+          >
             Vi hjälper hem, företag och kontor i Karlstad med noggrann städning,
             personlig service och flexibla upplägg som passar dina behov.
           </p>
 
           <p class="mt-4 max-w-2xl text-base leading-8 text-slate-600">
-            Med RUT-avdrag kan du dessutom få professionell hjälp till en lägre kostnad.
-            Kontakta oss så tar vi fram en lösning som passar dig.
+            Med RUT-avdrag kan du dessutom få professionell hjälp till en lägre
+            kostnad. Kontakta oss så tar vi fram en lösning som passar dig.
           </p>
 
           <div class="mt-8 flex flex-wrap gap-4">
@@ -63,35 +72,49 @@ import Check from "@lucide/astro/icons/check";
           </p>
         </div>
 
-        <aside class="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.06)]">
-          <h2 class="text-2xl font-semibold text-slate-950">
+        <aside
+          class="flex flex-col rounded-3xl border border-slate-200 bg-white/95 p-8 shadow-[0_10px_30px_rgba(15,23,42,0.06)]"
+        >
+          <h2 class="text-2xl font-semibold text-[#1D2B36]">
             Det här får du med Karlstad Städpartner
           </h2>
 
           <ul class="mt-6 space-y-5 text-slate-600">
             <li class="flex items-start gap-3">
-              <Sparkles class="mt-1 size-5 text-emerald-600" />
-              <span>Noggrann och pålitlig städning – vi lämnar inget åt slumpen</span>
+              <Sparkles class="mt-1 size-5 shrink-0 text-emerald-600" />
+              <span
+                >Noggrann och pålitlig städning – vi lämnar inget åt slumpen</span
+              >
             </li>
 
             <li class="flex items-start gap-3">
-              <UserCheck class="mt-1 size-5 text-emerald-600" />
-              <span>Personlig service – samma kontaktperson och tydlig kommunikation</span>
+              <UserCheck class="mt-1 size-5 shrink-0 text-emerald-600" />
+              <span
+                >Personlig service – samma kontaktperson och tydlig
+                kommunikation</span
+              >
             </li>
 
             <li class="flex items-start gap-3">
-              <Clock3 class="mt-1 size-5 text-emerald-600" />
-              <span>Flexibla upplägg – vi anpassar oss efter dina behov och tider</span>
+              <Clock3 class="mt-1 size-5 shrink-0 text-emerald-600" />
+              <span
+                >Flexibla upplägg – vi anpassar oss efter dina behov och tider</span
+              >
             </li>
 
             <li class="flex items-start gap-3">
-              <Leaf class="mt-1 size-5 text-emerald-600" />
-              <span>Miljövänliga produkter – skonsamt för både hem och miljö</span>
+              <Leaf class="mt-1 size-5 shrink-0 text-emerald-600" />
+              <span
+                >Miljövänliga produkter – skonsamt för både hem och miljö</span
+              >
             </li>
 
             <li class="flex items-start gap-3">
-              <BadgeCheck class="mt-1 size-5 text-emerald-600" />
-              <span>Alltid ett proffsigt resultat – vi städar som om det vore vårt eget</span>
+              <BadgeCheck class="mt-1 size-5 shrink-0 text-emerald-600" />
+              <span
+                >Alltid ett proffsigt resultat – vi städar som om det vore vårt
+                eget</span
+              >
             </li>
           </ul>
         </aside>
@@ -99,8 +122,10 @@ import Check from "@lucide/astro/icons/check";
     </div>
   </section>
 
-  <section class="border-y border-slate-200 bg-white">
-    <div class="mx-auto flex max-w-[1200px] flex-col gap-4 px-4 py-6 text-sm text-slate-600 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+  <section class="hidden border-y border-slate-200 bg-white md:flex">
+    <div
+      class="mx-auto flex max-w-[1200px] flex-col gap-4 px-4 py-5 text-sm text-slate-600 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:gap-12 lg:px-8"
+    >
       <div class="flex items-center gap-2">
         <BadgeCheck class="size-4 text-emerald-600" />
         <span>Personlig service</span>
@@ -120,216 +145,282 @@ import Check from "@lucide/astro/icons/check";
     </div>
   </section>
 
+  <section id="tjanster" class="scroll-mt-24 py-16 sm:py-20">
+    <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[0.5fr_1.4fr] lg:items-start">
+        <div>
+          <h2
+            class="text-3xl font-bold tracking-tight text-[#1D2B36] sm:text-4xl"
+          >
+            Våra tjänster
+          </h2>
+          <p class="mt-4 max-w-xl leading-8 text-slate-600">
+            Vi erbjuder städtjänster för både privatpersoner och företag i
+            Karlstad. Oavsett om du behöver löpande hjälp eller en enstaka
+            insats ser vi till att leverera ett resultat du kan känna dig trygg
+            med.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5"
+          >
+            <Sparkles class="size-6 text-emerald-600" />
+            <h3 class="mt-4 text-xl font-semibold text-[#1D2B36]">
+              Hemstädning
+            </h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Regelbunden eller behovsanpassad städning för dig som vill ha ett
+              rent, trivsamt hem utan stress i vardagen.
+            </p>
+            <p class="mt-4 text-sm font-medium text-emerald-700">
+              Exempelpris från ca 250 kr/h efter RUT
+            </p>
+          </article>
+
+          <article
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5"
+          >
+            <ScanSearch class="size-6 text-emerald-600" />
+            <h3 class="mt-4 text-xl font-semibold text-[#1D2B36]">
+              Fönsterputs
+            </h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Skinande rena fönster med noggrant utfört arbete som gör stor
+              skillnad för både känsla och helhetsintryck.
+            </p>
+            <p class="mt-4 text-sm font-medium text-emerald-700">
+              Pris efter storlek och omfattning
+            </p>
+          </article>
+
+          <article
+            class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5 md:col-span-2 xl:col-span-1"
+          >
+            <Building2 class="size-6 text-emerald-600" />
+            <h3 class="mt-4 text-xl font-semibold text-[#1D2B36]">
+              Kontorsstädning
+            </h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Professionell städning för arbetsplatser där ordning, trivsel och
+              ett välskött intryck spelar roll varje dag.
+            </p>
+            <p class="mt-4 text-sm font-medium text-emerald-700">
+              Flexibla upplägg för små och stora företag
+            </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-slate-50 py-16 sm:py-20">
     <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+        <h2
+          class="text-3xl font-bold tracking-tight text-[#1D2B36] sm:text-4xl"
+        >
           Därför väljer kunder oss
         </h2>
         <p class="mt-4 leading-8 text-slate-600">
-          Vi vill göra det enkelt att känna sig trygg. Därför fokuserar vi på tydlig kommunikation,
-          noggrant utfört arbete och service som faktiskt märks.
+          Vi vill göra det enkelt att känna sig trygg. Därför fokuserar vi på
+          tydlig kommunikation, noggrant utfört arbete och service som faktiskt
+          märks.
         </p>
       </div>
 
-  <div class="mt-10 grid gap-6 md:grid-cols-3">
-  <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5">
-    <div class="mb-4 flex items-center gap-1 text-amber-500">
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-    </div>
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)]"
+        >
+          <div class="mb-4 flex items-center gap-1 text-amber-500">
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+          </div>
 
-    <p class="leading-7 text-slate-600">
-      “Otroligt smidigt och väldigt noggrant utfört. Det märks att de bryr sig om resultatet.”
-    </p>
+          <p class="leading-7 text-slate-600">
+            “Smidigt, tydligt och väldigt noggrant utfört. Det märks att de bryr
+            sig om resultatet.”
+          </p>
 
-    <div class="mt-6 flex items-center gap-3">
-<div class="h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center text-sm font-semibold text-emerald-700">
-  A
-</div>
-      <div>
-        <p class="text-sm font-medium text-slate-900">Anna</p>
-        <p class="text-xs text-slate-500">Karlstad</p>
+          <div class="mt-6 flex items-center gap-3">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-sm font-semibold text-emerald-700"
+            >
+              A
+            </div>
+            <div>
+              <p class="text-sm font-medium text-slate-900">Anna</p>
+              <p class="text-xs text-slate-500">Karlstad</p>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)]"
+        >
+          <div class="mb-4 flex items-center gap-1 text-amber-500">
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+          </div>
+
+          <p class="leading-7 text-slate-600">
+            “Trevligt bemötande, tydlig kontakt och ett hem som kändes
+            ordentligt rent efteråt.”
+          </p>
+
+          <div class="mt-6 flex items-center gap-3">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-sm font-semibold text-emerald-700"
+            >
+              J
+            </div>
+            <div>
+              <p class="text-sm font-medium text-slate-900">Johan</p>
+              <p class="text-xs text-slate-500">Karlstad</p>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)]"
+        >
+          <div class="mb-4 flex items-center gap-1 text-amber-500">
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+            <Star class="size-4 fill-current" />
+          </div>
+
+          <p class="leading-7 text-slate-600">
+            “Enkel kontakt, flexibelt upplägg och ett professionellt intryck
+            från start till slut.”
+          </p>
+
+          <div class="mt-6 flex items-center gap-3">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-100 text-sm font-semibold text-emerald-700"
+            >
+              E
+            </div>
+            <div>
+              <p class="text-sm font-medium text-slate-900">Erik</p>
+              <p class="text-xs text-slate-500">Karlstad</p>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
-  </article>
-
-  <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5">
-    <div class="mb-4 flex items-center gap-1 text-amber-500">
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-    </div>
-
-    <p class="leading-7 text-slate-600">
-      “Tydlig kommunikation, trevligt bemötande och ett rent, fräscht resultat varje gång.”
-    </p>
-
-    <div class="mt-6 flex items-center gap-3">
-   <div class="h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center text-sm font-semibold text-emerald-700">
-  A
-</div>
-      <div>
-        <p class="text-sm font-medium text-slate-900">Johan</p>
-        <p class="text-xs text-slate-500">Karlstad</p>
-      </div>
-    </div>
-  </article>
-
-  <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5">
-    <div class="mb-4 flex items-center gap-1 text-amber-500">
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-      <Star class="size-4 fill-current" />
-    </div>
-
-    <p class="leading-7 text-slate-600">
-      “Flexibelt upplägg och väldigt professionellt intryck. En enkel firma att ha att göra med.”
-    </p>
-
-    <div class="mt-6 flex items-center gap-3">
- <div class="h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center text-sm font-semibold text-emerald-700">
-  E
-</div>
-      <div>
-        <p class="text-sm font-medium text-slate-900">Erik</p>
-        <p class="text-xs text-slate-500">Karlstad</p>
-      </div>
-    </div>
-  </article>
-</div>
     </div>
   </section>
 
-  <section id="tjanster" class="scroll-mt-24 py-16 sm:py-20">
+  <section class="border-y border-slate-200 bg-white py-16 sm:py-20">
     <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-          Våra tjänster
-        </h2>
-        <p class="mt-4 leading-8 text-slate-600">
-          Vi erbjuder städtjänster för både privatpersoner och företag i Karlstad.
-          Oavsett om du behöver löpande hjälp eller en enstaka insats ser vi till att
-          leverera ett resultat du kan känna dig trygg med.
-        </p>
-      </div>
-
-      <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5">
-          <Sparkles class="size-6 text-emerald-600" />
-          <h3 class="mt-4 text-xl font-semibold text-slate-950">Hemstädning</h3>
-          <p class="mt-3 leading-7 text-slate-600">
-            Regelbunden eller behovsanpassad städning för dig som vill ha ett rent,
-            trivsamt hem utan stress i vardagen.
+      <div class="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <div>
+          <h2
+            class="text-3xl font-bold tracking-tight text-[#1D2B36] sm:text-4xl"
+          >
+            Tryggt och enkelt från start
+          </h2>
+          <p class="mt-4 max-w-xl leading-8 text-slate-600">
+            Vi vill att det ska kännas enkelt att anlita oss. Därför håller vi
+            processen tydlig, smidig och personlig från första kontakt till
+            färdigt resultat.
           </p>
-          <p class="mt-4 text-sm font-medium text-emerald-700">
-            Exempelpris från ca 250 kr/h efter RUT
-          </p>
-        </article>
-
-        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5">
-          <ScanSearch class="size-6 text-emerald-600" />
-          <h3 class="mt-4 text-xl font-semibold text-slate-950">Fönsterputs</h3>
-          <p class="mt-3 leading-7 text-slate-600">
-            Skinande rena fönster med noggrant utfört arbete som gör stor skillnad
-            för både känsla och helhetsintryck.
-          </p>
-          <p class="mt-4 text-sm font-medium text-emerald-700">
-            Pris efter storlek och omfattning
-          </p>
-        </article>
-
-        <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition hover:-translate-y-0.5">
-          <Building2 class="size-6 text-emerald-600" />
-          <h3 class="mt-4 text-xl font-semibold text-slate-950">Kontorsstädning</h3>
-          <p class="mt-3 leading-7 text-slate-600">
-            Professionell städning för arbetsplatser där ordning, trivsel och ett
-            välskött intryck spelar roll varje dag.
-          </p>
-          <p class="mt-4 text-sm font-medium text-emerald-700">
-            Flexibla upplägg för små och stora företag
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="border-t border-b border-slate-200 bg-white py-16 sm:py-20">
-    <div class="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 ">
-      <div class="max-w-2xl ">
-        <h2 class="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-          Tryggt och enkelt från start
-        </h2>
-        <p class="mt-4 leading-8 text-slate-600">
-          Vi vill att det ska kännas enkelt att anlita oss. Därför håller vi processen tydlig,
-          smidig och personlig från första kontakt till färdigt resultat.
-        </p>
-      </div>
-
-      <div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4 ">
-        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:-translate-y-1">
-          <ShieldCheck class="size-6 text-emerald-600" />
-          <h3 class="mt-4 text-lg font-semibold text-slate-950">Trygg kontakt</h3>
-          <p class="mt-2 text-sm leading-7 text-slate-600">
-            Tydlig kommunikation och snabb återkoppling genom hela processen.
-          </p>
+          <div
+            class="mt-8 h-58 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500"
+          >
+            Yta för bild – till exempel arbetsbild, detaljfoto eller miljöbild.
+          </div>
         </div>
 
-        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:-translate-y-1">
-          <Check class="size-6 text-emerald-600" />
-          <h3 class="mt-4 text-lg font-semibold text-slate-950">Tydlig offert</h3>
-          <p class="mt-2 text-sm leading-7 text-slate-600">
-            Du får ett upplägg anpassat efter dina behov utan krångel.
-          </p>
-        </div>
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-2">
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <ShieldCheck class="size-6 text-emerald-600" />
+            <h3 class="mt-4 text-lg font-semibold text-[#1D2B36]">
+              Trygg kontakt
+            </h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">
+              Tydlig kommunikation och snabb återkoppling genom hela processen.
+            </p>
+          </div>
 
-        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:-translate-y-1">
-          <Leaf class="size-6 text-emerald-600" />
-          <h3 class="mt-4 text-lg font-semibold text-slate-950">Skonsamma produkter</h3>
-          <p class="mt-2 text-sm leading-7 text-slate-600">
-            Vi använder produkter som är skonsamma för både hem och miljö.
-          </p>
-        </div>
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <Check class="size-6 text-emerald-600" />
+            <h3 class="mt-4 text-lg font-semibold text-[#1D2B36]">
+              Tydlig offert
+            </h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">
+              Du får ett upplägg anpassat efter dina behov utan krångel.
+            </p>
+          </div>
 
-        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6 hover:-translate-y-1">
-          <BadgeCheck class="size-6 text-emerald-600" />
-          <h3 class="mt-4 text-lg font-semibold text-slate-950">Noggrant resultat</h3>
-          <p class="mt-2 text-sm leading-7 text-slate-600">
-            Vårt fokus är att du ska känna dig nöjd, trygg och vilja anlita oss igen.
-          </p>
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <Leaf class="size-6 text-emerald-600" />
+            <h3 class="mt-4 text-lg font-semibold text-[#1D2B36]">
+              Skonsamma produkter
+            </h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">
+              Vi använder produkter som är skonsamma för både hem och miljö.
+            </p>
+          </div>
+
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <BadgeCheck class="size-6 text-emerald-600" />
+            <h3 class="mt-4 text-lg font-semibold text-[#1D2B36]">
+              Noggrant resultat
+            </h3>
+            <p class="mt-2 text-sm leading-7 text-slate-600">
+              Vårt fokus är att du ska känna dig nöjd, trygg och vilja anlita
+              oss igen.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="om-oss" class="scroll-mt-24 border-t border-slate-200 bg-slate-50 py-16 sm:py-20">
-    <div class="mx-auto grid max-w-[1200px] gap-6 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-      <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
-        <h2 class="text-3xl font-bold tracking-tight text-slate-950">Om oss</h2>
+  <section
+    id="om-oss"
+    class="scroll-mt-24 border-t border-slate-200 bg-slate-50 py-16 sm:py-20"
+  >
+    <div
+      class="mx-auto grid max-w-[1200px] gap-6 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8"
+    >
+      <div
+        class="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]"
+      >
+        <h2 class="text-3xl font-bold tracking-tight text-[#1D2B36]">Om oss</h2>
         <p class="mt-4 leading-8 text-slate-600">
-          Karlstad Städpartner är en lokal städfirma med fokus på kvalitet, trygghet
-          och personlig service. Vi tror på tydlig kommunikation, noggrant utfört arbete
-          och lösningar som anpassas efter varje kund.
+          Karlstad Städpartner är en lokal städfirma med fokus på kvalitet,
+          trygghet och personlig service. Vi tror på tydlig kommunikation,
+          noggrant utfört arbete och lösningar som anpassas efter varje kund.
         </p>
         <p class="mt-4 leading-8 text-slate-600">
-          Vårt mål är enkelt: att göra vardagen lättare för dig och samtidigt leverera
-          ett resultat som känns både rent, professionellt och pålitligt.
+          Vårt mål är enkelt: att göra vardagen lättare för dig och samtidigt
+          leverera ett resultat som känns både rent, professionellt och
+          pålitligt.
         </p>
         <p class="mt-6 text-sm leading-7 text-slate-500">
-          Hör av dig så berättar vi mer om våra tjänster och tar fram en lösning som
-          passar just dina behov.
+          Hör av dig så berättar vi mer om våra tjänster och tar fram en lösning
+          som passar just dina behov.
         </p>
       </div>
 
-      <div class="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]">
-        <h2 class="text-3xl font-bold tracking-tight text-slate-950">Kontaktuppgifter</h2>
+      <div
+        class="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_30px_rgba(15,23,42,0.05)]"
+      >
+        <h2 class="text-3xl font-bold tracking-tight text-[#1D2B36]">
+          Kontaktuppgifter
+        </h2>
 
         <div class="mt-6 space-y-4 text-slate-600">
           <p class="flex items-center gap-3">
@@ -346,31 +437,42 @@ import Check from "@lucide/astro/icons/check";
           </p>
         </div>
 
-        <div class="mt-6 overflow-hidden rounded-2xl">
-          <img
-            src="/cleanwindow.jpg"
-            alt="Fönsterputs och städning i Karlstad"
-            class="h-auto w-full object-cover"
-          />
+        <div
+          class="mt-6 overflow-hidden rounded-2xl border border-dashed border-slate-300 bg-slate-50"
+        >
+          <div
+            class="flex min-h-[220px] items-center justify-center p-6 text-sm text-slate-500"
+          >
+            Yta för bild – till exempel fönsterputs, arbetsbild eller miljöfoto.
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="kontakt" class="scroll-mt-24 border-t border-slate-200 py-16 sm:py-20">
-    <div class="mx-auto grid max-w-[1200px] gap-6 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+  <section
+    id="kontakt"
+    class="scroll-mt-24 border-t border-slate-200 py-16 sm:py-20"
+  >
+    <div
+      class="mx-auto grid max-w-[1200px] gap-6 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8"
+    >
       <div class="p-8">
-        <h2 class="text-3xl font-bold tracking-tight text-slate-950">
+        <h2 class="text-3xl font-bold tracking-tight text-[#1D2B36]">
           Be om en kostnadsfri offert
         </h2>
 
         <p class="mt-4 leading-8 text-slate-600">
-          Berätta kort vad du behöver hjälp med så återkommer vi så snart vi kan.
-          Vi erbjuder flexibla lösningar för både hem och företag i Karlstad.
+          Berätta kort vad du behöver hjälp med så återkommer vi så snart vi
+          kan. Vi erbjuder flexibla lösningar för både hem och företag i
+          Karlstad.
         </p>
 
-        <div class="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm leading-7 text-emerald-900">
-          Tar 1 minut att fylla i • Inget bindande • Vi återkommer oftast inom 24 timmar
+        <div
+          class="mt-6 rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-sm leading-7 text-emerald-900"
+        >
+          Tar 1 minut att fylla i • Inget bindande • Vi återkommer oftast inom
+          24 timmar
         </div>
 
         <div class="mt-6 space-y-3 text-sm text-slate-600">
@@ -387,6 +489,11 @@ import Check from "@lucide/astro/icons/check";
             <span>Upplägg anpassat efter dina behov</span>
           </p>
         </div>
+        <div
+          class="mt-8 h-40 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-4 text-sm text-slate-500"
+        >
+          Yta för bild – till exempel arbetsbild, detaljfoto eller miljöbild.
+        </div>
       </div>
 
       <div class="p-8">
@@ -400,7 +507,10 @@ import Check from "@lucide/astro/icons/check";
           <input type="hidden" name="form-name" value="contact" />
 
           <div>
-            <label for="name" class="mb-2 block text-sm font-medium text-slate-800">
+            <label
+              for="name"
+              class="mb-2 block text-sm font-medium text-slate-800"
+            >
               Namn
             </label>
             <input
@@ -409,12 +519,15 @@ import Check from "@lucide/astro/icons/check";
               type="text"
               autocomplete="name"
               required
-              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
+              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 transition outline-none placeholder:text-slate-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
             />
           </div>
 
           <div>
-            <label for="tel" class="mb-2 block text-sm font-medium text-slate-800">
+            <label
+              for="tel"
+              class="mb-2 block text-sm font-medium text-slate-800"
+            >
               Telefonnummer
             </label>
             <input
@@ -423,12 +536,15 @@ import Check from "@lucide/astro/icons/check";
               type="tel"
               autocomplete="tel"
               required
-              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
+              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 transition outline-none placeholder:text-slate-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
             />
           </div>
 
           <div>
-            <label for="email" class="mb-2 block text-sm font-medium text-slate-800">
+            <label
+              for="email"
+              class="mb-2 block text-sm font-medium text-slate-800"
+            >
               E-post
             </label>
             <input
@@ -437,12 +553,15 @@ import Check from "@lucide/astro/icons/check";
               type="email"
               autocomplete="email"
               required
-              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
+              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 transition outline-none placeholder:text-slate-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
             />
           </div>
 
           <div>
-            <label for="service" class="mb-2 block text-sm font-medium text-slate-800">
+            <label
+              for="service"
+              class="mb-2 block text-sm font-medium text-slate-800"
+            >
               Typ av städning
             </label>
 
@@ -450,7 +569,7 @@ import Check from "@lucide/astro/icons/check";
               id="service"
               name="service"
               required
-              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
+              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 transition outline-none focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
             >
               <option value="" disabled selected>Välj tjänst...</option>
               <option value="hemstadning">Hemstädning</option>
@@ -461,7 +580,10 @@ import Check from "@lucide/astro/icons/check";
           </div>
 
           <div>
-            <label for="message" class="mb-2 block text-sm font-medium text-slate-800">
+            <label
+              for="message"
+              class="mb-2 block text-sm font-medium text-slate-800"
+            >
               Meddelande
             </label>
             <textarea
@@ -470,7 +592,7 @@ import Check from "@lucide/astro/icons/check";
               required
               rows="4"
               placeholder="Beskriv kort vad du behöver hjälp med..."
-              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
+              class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 transition outline-none placeholder:text-slate-400 focus:border-emerald-600 focus:ring-4 focus:ring-emerald-100"
             ></textarea>
           </div>
 
@@ -489,7 +611,9 @@ import Check from "@lucide/astro/icons/check";
     </div>
   </section>
 
-  <div class="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 p-3 shadow-[0_-8px_30px_rgba(15,23,42,0.08)] backdrop-blur md:hidden">
+  <div
+    class="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 p-3 shadow-[0_-8px_30px_rgba(15,23,42,0.08)] backdrop-blur md:hidden"
+  >
     <div class="mx-auto flex max-w-[1200px] gap-3">
       <a
         href="tel:0701234567"
