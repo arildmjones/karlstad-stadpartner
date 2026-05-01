@@ -1,22 +1,59 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Phone from "@lucide/astro/icons/phone";
+import Check from "@lucide/astro/icons/check";
 ---
 
 <BaseLayout
-  title="Tack | Karlstad Städpartner AB"
-  description="Tack för ditt meddelande."
+  title="Tack | Karlstad Städpartner"
+  description="Tack för din förfrågan. Vi återkommer så snart vi kan."
 >
-  <section>
-    <div class="container">
+  <section class="py-20 sm:py-24">
+    <div class="mx-auto max-w-[800px] px-4 text-center sm:px-6 lg:px-8">
       <div
-        class="card"
-        style="max-width: 680px; margin: 3rem auto; text-align: center;"
+        class="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100"
       >
-        <h1 style="font-size: 2.2rem;">Tack!</h1>
-        <p class="muted">
-          Vi har tagit emot ditt meddelande och återkommer så snart vi kan.
-        </p>
-        <a class="button primary" href="/">Tillbaka till startsidan</a>
+        <Check class="size-6 text-emerald-600" />
+      </div>
+
+      <h1 class="text-3xl font-bold tracking-tight text-[#1D2B36] sm:text-4xl">
+        Tack för din förfrågan!
+      </h1>
+
+      <p class="mt-4 text-lg leading-8 text-slate-600">
+        Vi har tagit emot ditt meddelande och återkommer så snart vi kan –
+        oftast inom 24 timmar.
+      </p>
+
+      <div
+        class="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50 p-5 text-sm text-emerald-900"
+      >
+        Vill du ha snabbare svar? Ring oss direkt så hjälper vi dig på en gång.
+      </div>
+
+      <div
+        class="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row"
+      >
+        <a
+          href="tel:0701234567"
+          class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-700"
+        >
+          <Phone class="size-4" />
+          Ring oss
+        </a>
+
+        <a
+          href="/"
+          class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+        >
+          Tillbaka till startsidan
+        </a>
+      </div>
+
+      <div class="mt-10 text-sm text-slate-500">
+        <p>✔ Kostnadsfri offert</p>
+        <p>✔ Tydlig återkoppling</p>
+        <p>✔ Flexibla upplägg</p>
       </div>
     </div>
   </section>

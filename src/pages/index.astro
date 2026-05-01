@@ -527,11 +527,13 @@ import Check from "@lucide/astro/icons/check";
           name="contact"
           method="POST"
           data-netlify="true"
+          data-netlify-honeypot="bot-field"
           action="/tack"
           class="space-y-5"
         >
+      
           <input type="hidden" name="form-name" value="contact" />
-
+          <input type="hidden" name="bot-field" />
           <div>
             <label
               for="name"
